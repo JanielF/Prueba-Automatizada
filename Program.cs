@@ -215,7 +215,7 @@ namespace SpotifyAutomation
             try
             {
                 // Encontrar y hacer clic en el botón de pausar
-                IWebElement pauseButton = driver.FindElement(By.CssSelector("button[aria-label='Pausar']"));
+                IWebElement pauseButton = driver.FindElement(By.CssSelector("button[aria-label='Pause']"));
                 pauseButton.Click();
 
                 Screenshot screenshotPause = ((ITakesScreenshot)driver).GetScreenshot();
@@ -263,6 +263,7 @@ namespace SpotifyAutomation
             {
                 // Encontrar y hacer clic en el botón de canción anterior
                 IWebElement previousButton = driver.FindElement(By.CssSelector("button[data-testid='control-button-skip-back']"));
+                previousButton.Click();
                 previousButton.Click();
                 previousButton.Click();
 
