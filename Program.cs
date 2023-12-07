@@ -265,6 +265,7 @@ namespace SpotifyAutomation
                 IWebElement previousButton = driver.FindElement(By.CssSelector("button[data-testid='control-button-skip-back']"));
                 previousButton.Click();
                 previousButton.Click();
+                previousButton.Click();
 
                 Screenshot screenshotSkipPreviousSong = ((ITakesScreenshot)driver).GetScreenshot();
                 string screenshotSkipPreviousSongPath = System.IO.Path.Combine(capturasPath, "screenshotSkipPreviousSong.png");
